@@ -118,7 +118,7 @@ def is_office_hours
   else
     current_time_in_timezone = timezone.at(current_time);
     time = current_time_in_timezone.hour * 100 + current_time_in_timezone.min;
-    day = current_time.wday
+    day = current_time_in_timezone.wday
   end
   while days_of_work.length < 7
     days_of_work += "1"
