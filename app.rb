@@ -130,6 +130,7 @@ def is_office_hours
     puts "Calculated Time: #{time}"
     puts "     Start time: #{time_start.to_i}"
     puts "      Stop time: #{time_stop.to_i}"
+    puts "today is day #{day}"
   end
 
   if time_start.nil? or time_stop.nil? then
