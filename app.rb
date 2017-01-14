@@ -64,7 +64,7 @@ def send_out_of_office_message (conversation_id)
   admin_id = ENV["bot_admin_id"] 
   message = ENV["message"] || "We are not available at the moment, we'll get back to you as soon as possible"
   init_intercom
-  @intercom.conversations.reply(:id => conversation_id, :type => 'admin', :admin_id => admin_id, :message_type => 'comment', :body => message)
+  @intercom.conversations.reply(:id => conversation_id, :type => 'admin', :admin_id => admin_id, :message_type => 'note', :body => message)
   @intercom.conversations.reply(:id => conversation_id, :type => 'admin', :admin_id => admin_id, :message_type => 'note', :body => "#{INTERNAL_NOTE_MESSAGE} #{Time.now.to_i}")
 end
 
