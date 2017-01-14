@@ -4,6 +4,10 @@
   "repository": "https://github.com/thewheat/intercom-out-of-office",
   "keywords": ["intercom", "webhook", "office", "hour", "autoresponder"],
   "env": {
+    "DEBUG": {
+      "required": true,
+      "description": "Debug mode"
+    },
     "APP_ID": {
       "required": true,
       "description": "your app ID (or personal token)"
